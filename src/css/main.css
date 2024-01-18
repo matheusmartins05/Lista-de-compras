@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap')
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{   	
+    --gray-600: #0C0C0D;
+    --gray-500: #111112;
+    --gray-400: #17171A;
+    --gray-300: #252529;
+    --gray-200: #AFABB6;
+    --gray-100: #FBF9FE;
+
+
+}
+
+header{
+    background-image: url('../images/background.png');
+    height: 18.2rem;
+    font-family: "Inter", sans-serif;
+}
+main{
+    width: 320px;
+    margin: auto;
+    background-color: var(--gray-600);
+    color: var(--gray-100);
+}
+
