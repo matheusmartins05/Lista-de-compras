@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 *{
     padding: 0;
@@ -21,11 +21,28 @@ html{
 
 }
 
+.limite{
+    width: 90%;
+    margin: auto;
+}
+
 header{
     background-image: url('../images/background.png');
     height: 18.2rem;
     font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+
+
+section{
+    background-color: var(--gray-500);
+    height: 600px;
+    
+}
+
 main{
     width: 320px;
     margin: auto;
@@ -33,3 +50,61 @@ main{
     color: var(--gray-100);
 }
 
+
+.formulario{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.conteiner-item{
+    width: 100%;
+}
+.item{
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.6rem;
+    background-color: var(--gray-400);
+    border: 1px solid var(--gray-300);
+}
+
+.conteiner-quantidade{
+    width: 55%;
+}
+.etiquetaQuantidade{
+    width: 100%;
+}
+.quantidade{
+    width: 49%;
+    height: 4rem;
+    border: none;
+    background-color: var(--gray-400);
+}
+.tipo-quantidade{
+    width: 49%;
+    height: 4rem;
+    border-left: 1px solid var(--gray-200);
+    
+    background-color: var(--gray-300);
+    color: var(--gray-200);
+}
+
+.unindoInputs{
+    border: 1px solid var(--gray-300);
+    border-radius: 0.6rem;
+}
+
+
+
+.conteiner-categoria{
+    width: 40%;
+}
+
+.categorias{
+    width: 100%;
+    height: 4rem;
+    background-color: var(--gray-400);
+    border: 1px solid var(--gray-300);
+    color: var(--gray-200);
+    border-radius: 0.6rem;
+}
