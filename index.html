@@ -1,63 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de compras</title>
-    <link rel="stylesheet" href="./src/css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <main>
-        <header>
-            <h1>Lista de Compras</h1>
-        </header>  
+      <header>
+        <h1>Lista de Compras</h1>
+      </header>
 
-        <section>
-            <div class="limite">
-
-                
-                <form class="form-inline formulario">
-                    <div class="conteiner-item">
-                        <label class="my-1 mr-2" >Item</label>
-                        <input type="text" class="item">
-                    </div>
-
-                    <div class="conteiner-quantidade">
-                        <label class="my-1 mr-2 etiquetaQuantidade" >Quantidade</label>
-                        <div class="unindoInputs">
-                            <input type="number" class="quantidade">
-                            <select class="tipo-quantidade">
-                                <option value="1" selected>UN.</option>
-                                <option value="2">L</option>
-                                <option value="3">Kg</option>
-
-                            </select>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="conteiner-categoria">
-                        <label class="my-1 mr-2 etiquetaCategoria" >Categoria</label><br>
-                        <select class="categorias">
-                          <option selected>Selecione</option>
-                          <option value="1">Padaria</option>
-                          <option value="2">Legume</option>
-                          <option value="3">Carne</option>
-                          <option value="4">Fruta</option>
-                          <option value="5">Bebida</option>
-                        </select>
-                    </div>
-                  
-                   
-                  </form>
+      <section class="novoItem">
+        <div class="limite">
+          <form class="form-inline formulario">
+            <div class="conteiner-item">
+              <label class="my-1 mr-2">Item</label>
+              <input type="text" class="item" />
             </div>
-        </section>
 
+            <div class="conteiner-quantidade">
+              <label class="my-1 mr-2 etiquetaQuantidade">Quantidade</label>
+              <div class="unindoInputs">
+                <input type="number" class="quantidade" />
+                <select class="tipo-quantidade">
+                  <option value="1" selected>UN.</option>
+                  <option value="2">L</option>
+                  <option value="3">Kg</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="conteiner-categoria">
+              <label class="my-1 mr-2 etiquetaCategoria">Categoria</label><br />
+              <select class="categorias">
+                <option selected>Selecione</option>
+                <option value="1">Padaria</option>
+                <option value="2">Legume</option>
+                <option value="3">Carne</option>
+                <option value="4">Fruta</option>
+                <option value="5">Bebida</option>
+              </select>
+            </div>
+
+            <button class="btn-submit">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="40" height="40" rx="20" fill="#7450AC" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 20C12 19.4477 12.4477 19 13 19H27C27.5523 19 28 19.4477 28 20C28 20.5523 27.5523 21 27 21H13C12.4477 21 12 20.5523 12 20Z"
+                  fill="#FBF9FE"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20 12C20.5523 12 21 12.4477 21 13V27C21 27.5523 20.5523 28 20 28C19.4477 28 19 27.5523 19 27V13C19 12.4477 19.4477 12 20 12Z"
+                  fill="#FBF9FE"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="itensListados limite">
+        <div class="card-item">
+          <input type="checkbox" />
+          <div class="dadosItem">
+            <p>Maça</p>
+            <p>1 Unidade</p>
+          </div>
+          <img class="imgTipoItem" src="src/images/fruta.svg" alt="" />
+        </div>
+      </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

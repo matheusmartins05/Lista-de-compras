@@ -39,7 +39,6 @@ header{
 
 section{
     background-color: var(--gray-600);
-    height: 600px;
     
 }
 
@@ -71,13 +70,13 @@ main{
 
 
 .conteiner-quantidade{
-    width: 55%;
+    width: 30%;
 }
 .etiquetaQuantidade{
     width: 100%;
 }
 .quantidade{
-    width: 49%;
+    width: 47%;
     border: none;
     height: 4rem;
     border-radius: 0.6rem 0px 0rem 0.6rem;
@@ -103,7 +102,7 @@ main{
 
 
 .conteiner-categoria{
-    width: 40%;
+    width: 47%;
 }
 
 .categorias{
@@ -114,3 +113,43 @@ main{
     color: var(--gray-200);
     border-radius: 0.6rem;
 }
+
+
+.btn-submit{
+    background-color: #0c0c0d00;
+    border: none;
+    align-self: end;
+}
+
+
+
+.itensListados{
+    height: 400px;
+    padding-block: 5rem;
+}
+
+.card-item{
+    background-color: var(--gray-300);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.8rem;
+    padding-inline: 2rem;
+
+    height: 6.8rem;
+}
+
+.dadosItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.dadosItem p{
+    margin: 0;
+}
+
+.imgTipoItem{
+    width: 2rem;
+}
+
