@@ -1,6 +1,4 @@
 /*  Configurações gerais  */
-
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 * {
@@ -27,13 +25,7 @@ html {
   margin: auto;
 }
 
-
-
-
 /*Seção de formulário */
-
-
-
 
 header {
   background-image: url("../images/background.png");
@@ -65,6 +57,8 @@ main {
   width: 100%;
 }
 .item {
+  color: #fff;
+  text-indent: 1rem;
   width: 100%;
   height: 4rem;
   border-radius: 0.6rem;
@@ -80,6 +74,8 @@ main {
 }
 .quantidade {
   width: 47%;
+  text-indent: 1rem;
+  color: #fff;
   border: none;
   height: 4rem;
   border-radius: 0.6rem 0px 0rem 0.6rem;
@@ -119,13 +115,7 @@ main {
   align-self: end;
 }
 
-
-
-
-
-
 /* Seção de itens da lista */
-
 
 .itensListados {
   height: 400px;
@@ -147,18 +137,18 @@ main {
 
 .itemNaoComprado {
   appearance: none;
-  background: url('../images/checkBoxNaoFlegado.svg') no-repeat;
+  background: url("../images/checkBoxNaoFlegado.svg") no-repeat;
   width: 1.6rem;
   height: 1.6rem;
   cursor: pointer;
 }
 
-.itemComprado{
-    appearance: none;
-    background: url('../images/checkBoxFlegado.svg') no-repeat;
-    width: 1.6rem;
-    height: 1.6rem;
-    cursor: pointer;
+.itemComprado {
+  appearance: none;
+  background: url("../images/checkBoxFlegado.svg") no-repeat;
+  width: 1.6rem;
+  height: 1.6rem;
+  cursor: pointer;
 }
 
 .dadosItem {
