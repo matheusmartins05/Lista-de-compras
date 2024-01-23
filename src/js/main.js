@@ -6,39 +6,48 @@ let btnSubmit = document.querySelector(".btn-submit");
 let itensListados = document.querySelector(".itensListados");
 
 
-
-function aoAdicionarItem() {
+function adicionarItem(){
   btnSubmit.addEventListener("click", function (event) {
     event.preventDefault();
     itensListados.appendChild(
-        cardItem(itemDigitado.value, quantidadeInserida.value, TipoQuantidadeInserida.value, categoriaInserida.value)
-    )
+      cardItem(
+        itemDigitado.value,
+        quantidadeInserida.value,
+        TipoQuantidadeInserida.value,
+        categoriaInserida.value
+      )
+    );
+    itemCompradoOuNao();
   });
+
+
 }
 
 
 
-// Validações
-
-function TipoDeQuantidade() {
-    
+function itemCompradoOuNao(){
+  let checkboxItem = document.querySelectorAll("[data-checkbox]");
+  checkboxItem.forEach(element => {
+    element.addEventListener("click", function (event) {
+      element.classList.toggle('itemComprado');
+    })
+  });
+  
 }
 
 
 
+adicionarItem();
 
-// Cards
+// Card
 function cardItem(item, quantidade, tipoQuantidade, categoria) {
   const lista = document.createElement("div");
   lista.classList.add("card-item");
-  lista.innerHTML = `<input type="checkbox" class="itemNaoComprado"/>
+  lista.innerHTML = `<input type="checkbox" data-checkbox class="itemNaoComprado"/>
     <div class="dadosItem">
       <h3>${item}</h3>
       <p>${quantidade} ${tipoQuantidade}</p>
     </div>
-    <img class="imgTipoItem" src="src/images/${categoria}.svg" alt="" />`
+    <img class="imgTipoItem" src="src/images/${categoria}.svg" alt="" />`;
   return lista;
 }
-
-cardItem();
-aoAdicionarItem();
