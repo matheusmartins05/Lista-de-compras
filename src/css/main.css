@@ -180,8 +180,3 @@ main {
 .imgTipoItem {
   width: 2rem;
 }
-
-.card-item:last-child {
-  background-color: var(--gray-500);
-  border: 1px solid var(--gray-400);
-}

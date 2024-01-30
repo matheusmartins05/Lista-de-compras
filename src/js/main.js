@@ -28,9 +28,7 @@ function adicionarItem(){
 function itemCompradoOuNao(){
   let checkboxItem = document.querySelectorAll("[data-checkbox]");
   checkboxItem.forEach(element => {
-    element.addEventListener("click", function (event) {
-      element.classList.toggle('itemComprado');
-    })
+    element.classList.add('itemNaoComprado');
   });
   
 }
@@ -43,7 +41,7 @@ adicionarItem();
 function cardItem(item, quantidade, tipoQuantidade, categoria) {
   const lista = document.createElement("div");
   lista.classList.add("card-item");
-  lista.innerHTML = `<input type="checkbox" data-checkbox class="itemNaoComprado"/>
+  lista.innerHTML = `<input type="checkbox" data-checkbox />
     <div class="dadosItem">
       <h3>${item}</h3>
       <p>${quantidade} ${tipoQuantidade}</p>
